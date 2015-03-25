@@ -78,6 +78,9 @@ ul{
   font-size:20px;
   padding:6px;
 }
+.nav li i{
+  margin-right:6px;
+}
 
 .nav li a:hover,
 .nav li a:focus{
@@ -98,9 +101,10 @@ ul{
 .main form{
   margin:0 auto;
   max-width:960px;
+  padding-top:20px;
+  border-top:2px solid #60B99A;
 }
-.main form input
-{
+.main form input{ 
   width: 60%;
   border: 2px solid #554236;
   margin: 6px 0 16px 0;
