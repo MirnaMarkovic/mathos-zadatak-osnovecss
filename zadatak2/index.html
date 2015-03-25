@@ -5,24 +5,26 @@
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="assets/css/normalize.css"> 
     <link rel="stylesheet" text="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/zadatak2-fonts.css">
 </head>
 <body class="body">
     <header class="header">
 	   <h1>Prva aplikacija</h1>
 	   <ul>
-	     <li><a href="http://www.mathos.unios.hr/images/homepages/KWP/01_Uvod_u_Web.pdf">Web Fundamentals, uvod u HTTP i HTML</a></li>
-		 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/HTML-mathos.rar">Osnove HTML, CSS</a></li>
-		 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/Mono_-_Presentation.pdf">Basic CSS and related topics</a></li>
-		 <li><a href="#">Responsive design, mobile first approach, grids</a></li>
+	     <li><a href="http://www.mathos.unios.hr/images/homepages/KWP/01_Uvod_u_Web.pdf" target="_blank">Web Fundamentals, uvod u HTTP i HTML</a></li>
+		 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/HTML-mathos.rar" target="_blank">Osnove HTML, CSS</a></li>
+		 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/Mono_-_Presentation.pdf" target="_blank">Basic CSS and related topics</a></li>
+		 <li><a href="#" target="_blank">Responsive design, mobile first approach, grids</a></li>
 	   </ul>
 	</header>
 	<div class="container">
 		<nav class="nav">
 		 <ul >
-	      <li><a href="#">Home</a></li>
-		  <li><a href="#">About</a></li>
-		  <li><a href="#">Contact</a></li>
-		  <li><a href="#">Sign up</a></li>
+	      <li><a href="#"><span class="icon-home"></span>Home</a>
+	      </li>
+		  <li><a href="#"><span class="icon-info"></span>About</a></li>
+		  <li><a href="#"><span class="icon-users"></span>Contact</a></li>
+		  <li><a href="#"><span class="icon-login"></span>Sign up</a></li>
 	     </ul>
 		</nav>
 		<main class="main">
@@ -30,27 +32,27 @@
     	   <form action="#" method="POST" name="forma">
     	   	    <label for="ime">Ime: </label>
     	   	    <br>
-	   			<input type="text" name="ime" placeholder="Upišite ime" />
+	   			<input type="text" name="ime" id="ime" placeholder="Upišite ime" />
 	   			<br>
     	   	    <label for="prezime">Prezime: </label>
     	   	    <br>
-	   			<input type="text" name="prezime" placeholder="Upišite prezime" />
+	   			<input type="text" name="prezime" id="prezime" placeholder="Upišite prezime" />
 	   			<br>
     	   	    <label for="email">e-mail: </label>
     	   	    <br>
-	   			<input type="text" name="email" placeholder="Upišite svoju e-mail adresu" />
+	   			<input type="text" name="email"  id="email" placeholder="Upišite svoju e-mail adresu" />
 	   			<br>
     	   	    <label for="username">Korisničko ime: </label>
     	   	    <br>
-	   			<input type="text" name="username" placeholder="Upišite željeno korisničko ime">
+	   			<input type="text" name="username" id="username" placeholder="Upišite željeno korisničko ime">
 	   			<br>
-                <label for="username">Lozinka: </label>
+                <label for="password1">Lozinka: </label>
                 <br>
-	   			<input type="text" name="username" placeholder="Upišite željenu lozinku"/>
+	   			<input type="password" name="password1" id="password1" placeholder="Upišite željenu lozinku"/>
 	   			<br>
                 <label for="password2">Potvrda lozinke: </label>
                 <br>
-	   			<input type="text" name="password2" placeholder="Ponovite željenu lozinku"/>
+	   			<input type="password" name="password2" id="password2" placeholder="Ponovite željenu lozinku"/>
 	   			<br>
 	   			<input type="submit" name="submit" />
 	   			<button>Izađi</button>
