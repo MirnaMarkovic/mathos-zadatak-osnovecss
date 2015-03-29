@@ -3,64 +3,79 @@
 <head>
 	<title>Prva aplikacija - sign up</title>
 	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
 	<link rel="stylesheet" href="assets/css/normalize.css"> 
     <link rel="stylesheet" text="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/zadatak2-fonts.css">
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/zadatak2.js"></script>
 </head>
 <body class="body">
-    <header class="header">
-	   <h1>Prva aplikacija</h1>
-	   <ul>
-	     <li><a href="http://www.mathos.unios.hr/images/homepages/KWP/01_Uvod_u_Web.pdf" target="_blank">Web Fundamentals, uvod u HTTP i HTML</a></li>
-		 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/HTML-mathos.rar" target="_blank">Osnove HTML, CSS</a></li>
-		 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/Mono_-_Presentation.pdf" target="_blank">Basic CSS and related topics</a></li>
-		 <li><a href="#" target="_blank">Responsive design, mobile first approach, grids</a></li>
-	   </ul>
-	</header>
-	<div class="container">
-		<nav class="nav">
-		 <ul >
-	      <li><a href="http://www.mathos.unios.hr/index.php/nastava/matematika-i-racunarstvo/265" target="_blank"><i class="icon-home"></i>Home</a>
-	      </li>
-		  <li><a href="http://www.mathos.unios.hr/images/sadrzaji_kolegija/i035.pdf" target="_blank"><i class="icon-info"></i>About</a></li>
-		  <li><a href="#"><i class="icon-users"></i>Contact</a></li>
-		  <li><a href="index.html" target="_blank"><i class="icon-login"></i>Sign up</a></li>
-	     </ul>
-		</nav>
-		<main class="main">
-		   <h3>Registriraj se</h3>
-    	   <form action="#" method="POST" name="forma">
-    	   	    <label for="ime">Ime: </label>
-    	   	    <br>
-	   			<input type="text" name="ime" id="ime" placeholder="Upišite ime" />
-	   			<br>
-    	   	    <label for="prezime">Prezime: </label>
-    	   	    <br>
-	   			<input type="text" name="prezime" id="prezime" placeholder="Upišite prezime" />
-	   			<br>
-    	   	    <label for="email">e-mail: </label>
-    	   	    <br>
-	   			<input type="text" name="email"  id="email" placeholder="Upišite svoju e-mail adresu" />
-	   			<br>
-    	   	    <label for="username">Korisničko ime: </label>
-    	   	    <br>
-	   			<input type="text" name="username" id="username" placeholder="Upišite željeno korisničko ime">
-	   			<br>
-                <label for="password1">Lozinka: </label>
-                <br>
-	   			<input type="password" name="password1" id="password1" placeholder="Upišite željenu lozinku"/>
-	   			<br>
-                <label for="password2">Potvrda lozinke: </label>
-                <br>
-	   			<input type="password" name="password2" id="password2" placeholder="Ponovite željenu lozinku"/>
-	   			<br>
-	   			<input type="submit" name="submit" />
-	   			<button>Izađi</button>
-	   			</form>
-		</main>
+    <div class="wrapper">
+		<header class="header">
+		   <h1>Prva aplikacija</h1>
+		   <ul class="nav-bar">
+			 <li><a href="http://www.mathos.unios.hr/images/homepages/KWP/01_Uvod_u_Web.pdf" target="_blank">Web Fundamentals, uvod u HTTP i HTML</a></li>
+			 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/HTML-mathos.rar" target="_blank">Osnove HTML, CSS</a></li>
+			 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/Mono_-_Presentation.pdf" target="_blank">Basic CSS and related topics</a></li>
+			 <li><a href="#" target="_blank">Responsive design, mobile first approach, grids</a></li>
+		   </ul>
+		   <div class="mobile-nav-bar">
+			    <a href="#" class="icon-menu"></a>
+			    <ul>
+				 <li><a href="http://www.mathos.unios.hr/images/homepages/KWP/01_Uvod_u_Web.pdf" target="_blank">Web Fundamentals, uvod u HTTP i HTML</a></li>
+				 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/HTML-mathos.rar" target="_blank">Osnove HTML, CSS</a></li>
+				 <li><a href="http://www.mathos.unios.hr/images/homepages/dseverdi/ClientWebProg/Mono_-_Presentation.pdf" target="_blank">Basic CSS and related topics</a></li>
+				 <li><a href="#" target="_blank">Responsive design, mobile first approach, grids</a></li>
+		        </ul>
+		   </div>
+		</header>
+		<div class="container">
+			<nav class="nav">
+			 <ul >
+			  <li><a href="http://www.mathos.unios.hr/index.php/nastava/matematika-i-racunarstvo/265" target="_blank"><i class="icon-home"></i><span>Home</span></a>
+			  </li>
+			  <li><a href="http://www.mathos.unios.hr/images/sadrzaji_kolegija/i035.pdf" target="_blank"><i class="icon-info"></i><span>About</span></a></li>
+			  <li><a href="#"><i class="icon-mail-alt"></i><span>Contact</span></a></li>
+			  <li><a href="index.html" target="_blank"><i class="icon-login"></i><span>Sign up</span></a></li>
+			 </ul>
+			</nav>
+			<main class="main">
+			   <h3>Registriraj se</h3>
+			   <form action="#" method="POST" name="forma">
+					<label for="ime">Ime: </label>
+					<br>
+					<input type="text" name="ime" id="ime" placeholder="Upišite ime" />
+					<br>
+					<label for="prezime">Prezime: </label>
+					<br>
+					<input type="text" name="prezime" id="prezime" placeholder="Upišite prezime" />
+					<br>
+					<label for="email">e-mail: </label>
+					<br>
+					<input type="text" name="email"  id="email" placeholder="Upišite svoju e-mail adresu" />
+					<br>
+					<label for="username">Korisničko ime: </label>
+					<br>
+					<input type="text" name="username" id="username" placeholder="Upišite željeno korisničko ime">
+					<br>
+					<label for="password1">Lozinka: </label>
+					<br>
+					<input type="password" name="password1" id="password1" placeholder="Upišite željenu lozinku"/>
+					<br>
+					<label for="password2">Potvrda lozinke: </label>
+					<br>
+					<input type="password" name="password2" id="password2" placeholder="Ponovite željenu lozinku"/>
+					<br>
+					<input type="submit" name="submit" value="Pošalji"/>
+					<button>Izađi</button>
+					</form>
+		    </main>
+		</div>
+	</div>
 		<footer class="footer">
 		  <small>autor: Mirna Marković</small>
 		</footer>
-	</div>
 </body>
 </html>

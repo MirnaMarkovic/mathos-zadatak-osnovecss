@@ -8,10 +8,15 @@ ul{
 
 .body{
   font-size:16px;
-  display:table;
   font-family:Arial, Helvetica, sans-serif;
+  max-width:2048px;
+  margin:0 auto;
 }
-
+.wrapper{
+  display:table;
+  margin:0 auto;
+  height:92vh;
+}
 .header{
   vertical-align:top;
   display:table-cell;
@@ -170,5 +175,108 @@ ul{
   color:white;
   text-align:center;
   padding:20px;
+  height:8vh;
 }
 
+@media only screen and (min-width:671px){
+  .mobile-nav-bar{
+    display:none;
+  }
+}
+
+@media only screen and (max-width:812px){
+  .nav  li{
+    margin-right:0;
+    width:50%;
+    padding-right:20px;
+  }
+  .nav li:last-of-type{
+    float:left;
+  }
+  .main form input{ 
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width:721px){
+  .wrapper,
+  .header,
+  .container{
+    display:block;
+  }
+  .header,
+  .container{
+    width:100%;
+  }
+  .wrapper{
+    padding-top:5rem;
+    position:relative;
+    height:100%;
+  }
+  .nav{
+    position:absolute;
+    width:100%;
+    height:5rem;
+    top:0;
+    left:0;
+  }
+  .nav  li{
+    margin-right:0;
+    width:25%;
+    padding-right:20px;
+  }
+  .nav li:last-of-type{
+    padding-right:0;
+  }
+  .nav li a{
+    font-size:24px;
+  }
+  .footer{
+    height:5rem;
+  }
+  
+}
+
+
+@media only screen and (max-width:670px){
+   .header h1{
+    font-size:2.2em;
+    margin-bottom:10px;
+  }
+  .nav-bar{
+    display:none;
+  }
+  .mobile-nav-bar{
+    margin:0 0 10px 0;
+    position:relative;
+  }
+  .mobile-nav-bar > a{
+    font-size:2em;
+    margin-bottom:20px;
+    color:#554236;
+    position:absolute;
+    top:-1.8em;
+    right:0;
+  }
+   
+  .mobile-nav-bar a:hover,
+  .mobile-nav-bar a:focus{
+    border-radius:5px;
+    border:1px solid white;
+  }
+  .mobile-nav-bar > ul{
+    display: none;
+    font-size:1.2em;
+  }
+
+  .nav li span{
+    display:none;
+  }
+  .nav li i{
+    font-size:2rem;
+  }
+  .main form label{
+    display:none;
+  }
+
+}
